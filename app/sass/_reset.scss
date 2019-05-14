@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+.btn-link:focus, .btn-link.focus {
+    text-decoration: none;
+}
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    line-height: inherit;
+}
+.app {
+    width: 100%;
+    height: 100%;
+}
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+*, *:focus {
+  outline: none;
+}
+*:before, *:after {
+  user-select: none;
+}
+input, textarea, input:before, textarea:before, input:after, textarea:after {
+  user-select: initial;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+form {
+  margin: 0;
+}
+input[type="submit"] {
+  cursor: pointer;
+  border: none;
+}
+input {
+  border: none;
+}
+textarea {
+  resize: none;
+  border: none;
+  appearance: none;
+  overflow: auto;
+}
+::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+img {
+  max-width: 100%;
+  border: none;
+}
+label {
+  user-select: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}

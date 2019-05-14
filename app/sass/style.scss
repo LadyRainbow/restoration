@@ -1,0 +1,19 @@
+@import "reset";
+@import "fonts";
+@import "custom";
+@import "variables";
+@import "dragDrop";
+@import "header/header";
+@import "popUp/popUp";
+@import "main/main";
+@import "media/media";
+
+body {
+    position: relative;
+    font-family: 'roboto-regular', sans-serif;
+}
+.content {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+}

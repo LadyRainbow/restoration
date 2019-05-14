@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restoration</title>
+    <link rel="shortcut icon" type="png" href="build/img/favicon.png"/>
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+     <link rel="stylesheet" href="build/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="/" class="logo">
+                <img src="build/img/logo.png" alt="logo">
+            </a>
+            <div class="right-block">
+                <div class="phone-text">
+                    <a href="tel:79268637525" class="phone-mob"><i class="fas fa-phone"></i></a>
+                    <p class="phone-number">+7 (926) 863-75-25</p>
+                    <p class="shedule">Режим работы: 11:00-20:00, без выходных</p>
+                </div>
+            </div>
+            <a class="mail" href="mailto:zakaz@7rest.ru"><img src="build/img/mail.png" alt="mail"><p>zakaz@7rest.ru</p></a>
+        </div>
+        <ul class="header-nav">
+            <li><a href="#order">Онлайн-заказ</a></li>
+            <li><a href="#price">Цены</a></li>
+            <li><a href="#delivery">Доставка</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="first-block">
+            <div class="content-hard">
+                <div id="form-box" class="form-box">
+                    <form action="send.php" method="post" id="form1" enctype="multipart/form-data">
+                          <fieldset>
+                            <div class="content">
+                                <p class="title-form">Моментальный заказ</p>
+                                <p class="subtitle-form">Телефон:</p>
+                                <input class="input-phone" type="tel" name="tel" value="" placeholder="8 (xxx) xxx-xx-xx" required>
+                                <p class="subtitle-form">Загрузите фотографии:</p>
+                                <div class="input-file-wrp">
+                                    <label><input id="input-file" type="file" name="file[]" multiple>
+                                        <p class="text-form">Прикрепите примеры фото</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <input class="btn-send" value="Отправить заявку" name="sendMail" type="submit" />
+                          </fieldset>
+                    </form>
+                  <div class="blurred-bg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="second-block">
+            <div class="content-hard">
+                <div class="inner-block">
+                    <p class="truck">Наш курьер заберет и&nbsp;доставит <br>ваши фото в пределах МКАД</p>
+                </div>
+                <div class="inner-block">
+                    <p class="photo">Реставрируем фотографии <br>любого качества</p>
+                </div>
+                <div class="inner-block">
+                    <p class="print">Мы бесплатно напечатаем <br>ваши фотографии</p>
+                </div>
+            </div>
+        </div>
+        <div class="third-block">
+            <div class="content">
+                <div class="slick-block">
+                    <div>
+                        <img class="old-pic" src="build/img/old.png" alt="старый вариант">
+                        <img class="new-pic" src="build/img/new.png" alt="реставрация">
+                    </div>
+                    <div>
+                        <img class="old-pic" src="build/img/old2.png" alt="старый вариант">
+                        <img class="new-pic" src="build/img/new2.png" alt="реставрация">
+                    </div>
+                    <div>
+                        <img class="old-pic" src="build/img/old3.png" alt="старый вариант">
+                        <img class="new-pic" src="build/img/new3.png" alt="реставрация">
+                    </div>
+
+                </div>
+                <div class="next-pic">
+                    <p>Следующий <br>пример</p>
+                </div>
+            </div>
+        </div>
+        <div id="price" class="fourth-block">
+            <p class="title">Ценообразование</p>
+            <p class="text">Стоимость реставрации оценивается мастером индивидуально, в&nbsp;зависимости от сложности работы. <br>Ниже представлены примерные цены.</p>
+            <div class="blocks-wrp">
+                <div class="block">
+                    <p class="block-title">Просто</p>
+                    <ul class="block-list">
+                        <li>- Обрезка</li>
+                        <li>- Удаление пыли и царапин</li>
+                        <li>- Перевод в ч/б или сепию</li>
+                    </ul>
+                    <p class="price">~350р</p>
+                </div>
+                <div class="block">
+                    <p class="block-title standart">Стандарт</p>
+                    <ul class="block-list">
+                        <li>- Удаление затертостей и трещин</li>
+                        <li>- Удаление шума</li>
+                        <li>- Повышение качества</li>
+                    </ul>
+                    <p class="price">~780р</p>
+                </div>
+                <div class="block">
+                    <p class="block-title hard">Сложно</p>
+                    <ul class="block-list">
+                        <li>- Полное восстановление</li>
+                        <li>- Дорисовка частей изображения</li>
+                        <li>- Перевод в цвет</li>
+                    </ul>
+                    <p class="price">от 2900р</p>
+                </div>
+            </div>
+        </div>
+        <div class="fifth-block">
+            <p class="title">Наши специалисты:</p>
+            <div class="specialists-wrp">
+                <div class="specialist-block">
+                    <div class="specialist-pic">
+                        <img src="build/img/specialist1.png" alt="фото специалиста">
+                    </div>
+                    <div class="specialist-text">
+                        <p class="name">Дмитрий</p>
+                        <p class="skill">Сложные <br>реставрационные<br>работы.</p>
+                    </div>
+                </div>
+                <div class="specialist-block">
+                    <div class="specialist-pic">
+                        <img src="build/img/specialist2.png" alt="фото специалиста">
+                    </div>
+                    <div class="specialist-text">
+                        <p class="name">Мария</p>
+                        <p class="skill">Дизайнер. Пакетная<br>обработка и ретушь.</p>
+                    </div>
+                </div>
+                <div class="specialist-block">
+                    <div class="specialist-pic">
+                        <img src="build/img/specialist3.png" alt="фото специалиста">
+                    </div>
+                    <div class="specialist-text">
+                        <p class="name">Владимир</p>
+                        <p class="skill">Реставрация<br>и художественная<br>дорисовка.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="order" class="sixth-block">
+            <div class="form-large">
+                <form action="send.php" method="post" id="collectForm" enctype="multipart/form-data">
+                      <fieldset>
+                        <div class="content">
+                            <p class="title-form">Заказать онлайн</p>
+                            <p class="subtitle-form">Загрузите фотографии:</p>
+                            <label id="label-file" class="label-file"><input id="input-files" type="file" name="file[]" multiple>
+                                <p class="text-form">Прикрепите примеры фото</p>
+                            </label>
+                            <div class="about-discount">
+                                <p>Наведите, чтобы посмотреть скидки от количества фото</p>
+                                <div class="hover-block">
+                                    <p class="title">Скидка от количества</p>
+                                    <div class="row">
+                                        <p class="hat">Количество</p>
+                                        <p class="hat">Размер скидки</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="left">5-10 <span>шт.</span></p>
+                                        <p class="right">-10%</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="left">10-20 <span>шт.</span></p>
+                                        <p class="right">-15%</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="left">20-50 <span>шт.</span></p>
+                                        <p class="right">-20%</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="left">50<span>+</span></p>
+                                        <p class="right">-30%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="subtitle-form border">Укажите формат печати:</p>
+                            <p>Можно выбрать несколько</p>
+                            <div class="formats-wrp">
+                                <label class="format">
+                                  <input type="checkbox" />
+                                  <div class="format-paper format1">
+                                      <p>А4</p>
+                                      <p>(21x30)</p>
+                                  </div>
+                                </label>
+                                <label class="format">
+                                  <input type="checkbox" />
+                                  <div class="format-paper format1">
+                                      <p>А5</p>
+                                      <p>(15x21)</p>
+                                  </div>
+                                </label>
+                                <label class="format">
+                                  <input type="checkbox" />
+                                  <div class="format-paper format1">
+                                      <p>А6</p>
+                                      <p>(10x15)</p>
+                                  </div>
+                                </label>
+                            </div>
+                            <p class="subtitle-form border">Вы можете  умножить количество экземпляров фото</p>
+                            <p>Например, что бы подарить родственникам или друзьям</p>
+                            <div class="wrp">
+                                <div class="count-wrp">
+                                    <div class="minus">-</div>
+                                    <label class="change-value-label">
+                                        <input type="text" class="change-value" name="" value="1" readonly>
+                                    </label>
+                                    <div class="plus">+</div>
+                                </div>
+                                <p id="free">Бесплатно</p>
+                            </div>
+                            <p class="subtitle-form border">Дополнительные опции</p>
+                            <p>Укажите, что нужно сделать с вашими фото еще:</p>
+                            <div class="additional-options-wrp">
+                                <label class="additional">
+                                  <input type="checkbox" />
+                                  <p class="additional-text format1">
+                                        Раскрасить фото
+                                        <span>+490р/шт.</span>
+                                  </p>
+                                </label>
+                                <label class="additional">
+                                  <input type="checkbox" />
+                                  <p class="additional-text format1">
+                                      Сохранение фотографий в электронном виде
+                                      <span>+150р</span>
+                                  </p>
+                                </label>
+                                <label class="additional">
+                                  <input type="checkbox" />
+                                  <p class="additional-text format1">
+                                        Рамка для фото
+                                        <span>+150р</span>
+                                  </p>
+                                </label>
+                            </div>
+                            <p class="subtitle-form border">Комментарий к заказу:</p>
+                            <textarea name="name" rows="8" cols="80" placeholder="Если вам нужно сделать разные фото в разных количествах, цвете и т.д."></textarea>
+                            <div class="additional-options-wrp padding-none">
+                                <p class="subtitle-form border">Способ получения</p>
+                                <label class="additional radio">
+                                    <input type="radio" name="optionRadio" checked/>
+                                    <div class="additional-text">Самовывоз</div>
+                                </label>
+                                <label class="additional">
+                                    <input type="radio" name="optionRadio" />
+                                    <div class="additional-text">Доставка <span>(Стоимость расчитывается отдельно)</span></div>
+                                </label>
+                                <textarea name="name" rows="8" cols="80" placeholder="Введите адрес"></textarea>
+                            </div>
+                            <p class="subtitle-form border">Контактные данные:</p>
+                            <div class="contact-details">
+                                <p>Имя:</p>
+                                <input type="text" name="name" value="" placeholder="Константин Константинопольский" required>
+                                <p>Телефон:</p>
+                                <input class="input-phone2" type="tel" name="tel" value="" placeholder="+7 (xxx) xxx-xx-xx" required>
+                                <p>E-mail:</p>
+                                <input type="email" name="email" value="" placeholder="simple@mail.ru" required>
+                            </div>
+                        </div>
+                        <input class="btn-send-all" value="Отправить заявку" name="sendMail" type="submit" />
+                      </fieldset>
+                </form>
+            </div>
+            <p id="contacts" class="marker">Мы находимся здесь:</p>
+        </div>
+        <div class="seventh-block">
+            <div id="map" style="width:100%"></div>
+        </div>
+        <div id="delivery" class="eighth-block">
+            <p class="title">Доставка</p>
+            <div class="block">
+                <p>В пределах МКАД</p>
+                <p>700р</p>
+            </div>
+            <div class="block">
+                <p>За МКАД</p>
+                <p>от 1000р</p>
+            </div>
+        </div>
+        <div class="ninth-block">
+            <a class="logo-footer" href="#"><img src="build/img/logo-footer.png" alt="logo"></a>
+            <ul class="footer-nav">
+                <li><a href="#price">Цены</a></li>
+                <li><a href="#delivery">Доставка</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3607fc15-d35a-4f29-b7a9-b8cb92c549de
+" type="text/javascript"></script>
+    <script src="build/js/jquery.maskedinput.min.js"></script>
+    <script src="build/js/form.js"></script>
+    <script src="build/js/main.js"></script>
+</body>
+</html>

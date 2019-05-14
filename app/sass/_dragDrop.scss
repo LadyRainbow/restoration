@@ -1,0 +1,27 @@
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+  display: none;
+}
+.box__dragndrop {
+    position: absolute;
+    bottom: 18px;
+}
+.input-file-wrp.has-advanced-upload {
+
+}
+.input-file-wrp.has-advanced-upload .box__dragndrop {
+  display: inline;
+}
+main .first-block .form-box .content .input-file-wrp.is-dragover label {
+    background: #fff;
+    outline: 2px dashed black;
+    outline-offset: -10px;
+}
+.input-file-wrp.is-uploading .box__input {
+  visibility: none;
+}
+.input-file-wrp.is-uploading .box__uploading {
+  display: block;
+}

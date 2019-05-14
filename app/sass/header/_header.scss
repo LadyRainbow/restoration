@@ -1,0 +1,165 @@
+header {
+    width: 100%;
+    background-color: #F6F6F6;
+    .header-top {
+        background: url('../img/bg2.png') repeat;
+        width: 100%;
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 131px;
+        }
+        .logo {
+            user-select: none;
+        }
+        .burger-mob {
+            display: none;
+            position: absolute;
+            width: 39px;
+            height: 30px;
+            right: 44px;
+            top: calc(50% - 15px);
+            align-items: center;
+            span {
+                width: 100%;
+                height: 4px;
+                display: block;
+                background: #938787;
+            }
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                display: block;
+                background: #938787;
+            }
+            &::before {
+                top: 0;
+            }
+            &::after {
+                bottom: 0;
+            }
+        }
+        .nav-mob-wrp {
+            display: none;
+            position: absolute;
+            z-index: 3;
+            top: 37px;
+            right: 26px;
+            width: 426px;
+            background: #F6F6F6;
+            box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.16);
+            border-radius: 8px;
+            padding-left: 60px;
+            padding-top: 84px;
+            padding-bottom: 61px;
+            .header-nav-mob {
+                color: #7E7B79;
+                font-size: 28px;
+                li {
+                    & + li {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+        .btn-close-nav {
+            position: absolute;
+            width: 39px;
+            height: 30px;
+            top: 20px;
+            right: 20px;
+            &::before, &::after {
+                position: absolute;
+                content: '';
+                top: calc(50% - 2px);
+                left: 0;
+                width: 100%;
+                height: 4px;
+                display: block;
+                background: #938787;
+            }
+            &::before {
+                transform: rotate(45deg);
+            }
+            &::after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    .right-block {
+        display: flex;
+        align-items: center;
+        .phone-text {
+            text-align: center;
+            .phone-number {
+                font-size: 36px;
+            }
+            .shedule {
+                color: #909090;
+                font-size: 14px;
+                padding-top: 6px;
+                user-select: none;
+            }
+        }
+        .phone-wrp {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background-color: rgba(0, 200, 56, .3);;
+            padding-top: 6px;
+            padding-left: 6px;
+            margin-left: 50px;
+            .circle {
+                background-color: #00C838;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                position: relative;
+                z-index: 2;
+                padding-top: 9px;
+                padding-left: 9px;
+            }
+        }
+    }
+    p.mail {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        padding-left: 52px;
+        &::before {
+            content: url('../img/mail.png');
+            position: absolute;
+            top: 6px;
+            left: 0;
+        }
+        a {
+              font-weight: 300;
+              font-size: 28px;
+              color: #000000;
+              font-family: 'roboto-light';
+          }
+    }
+    .header-nav {
+        padding: 9px 0;
+        li {
+            display: inline-block;
+            font-size: 16px;
+            color: #7E7B79;
+            padding-right: 35px;
+            & + li {
+                padding-left: 35px;
+                border-left: 1px solid #DDDDDD;
+            }
+            &:hover {
+                color: #4E4545;
+            }
+        }
+    }
+    .header-bottom-mob {
+        display: none;
+    }
+}
